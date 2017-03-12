@@ -89,7 +89,7 @@ public class FinalJava2 extends Application
               
               imv1.setImage(images.get(cardval -1));
               
-              yourval = (cardval - 1) % 13;
+              yourval = ((cardval - 1) % 13) + 1;
                //to get integer value, not just
               //the count of what card it is
               //14.png is an ace, it should be beaten by a 2, like 2.png.
@@ -99,12 +99,12 @@ public class FinalJava2 extends Application
            }
            else if(yourval > 0 && theirval == 0)
            {
-              int cardval = (rand.nextInt(53)+1);//random card for opponent
+              int cardval = (rand.nextInt(52)+1);//random card for opponent
               
               imv1.setImage(images.get(cardval - 1));
               //carval -1 for its index
               
-              theirval = (cardval - 1) % 13;
+              theirval = ((cardval - 1) % 13) + 1;
               
               roundover = true;
               //round is now over, second car has been drawn.
@@ -119,15 +119,15 @@ public class FinalJava2 extends Application
               
               imv2.setImage(images.get(cardval- 1));
               
-              yourval = (cardval - 1) % 13;
+              yourval = ((cardval - 1) % 13) + 1;
            }
            else if(yourval > 0 && theirval == 0)
            {
-              int cardval = (rand.nextInt(53)+1);//random card for opponent
+              int cardval = (rand.nextInt(52)+1);//random card for opponent
               
               imv2.setImage(images.get(cardval- 1));
               
-              theirval = (cardval - 1) % 13;
+              theirval = ((cardval - 1) % 13) + 1;
               
               roundover = true;
            }
@@ -141,15 +141,15 @@ public class FinalJava2 extends Application
               
               imv3.setImage(images.get(cardval- 1));
               
-              yourval = (cardval - 1) % 13;
+              yourval = ((cardval - 1) % 13) + 1;
            }
            else if(yourval > 0 && theirval == 0)
            {
-              int cardval = (rand.nextInt(53)+1);//random card for opponent
+              int cardval = (rand.nextInt(52)+1);//random card for opponent
               
               imv3.setImage(images.get(cardval- 1));
               
-              theirval = (cardval - 1) % 13;
+              theirval = ((cardval - 1) % 13) + 1;
               
               roundover = true;
            }
@@ -163,15 +163,15 @@ public class FinalJava2 extends Application
               
               imv4.setImage(images.get(cardval- 1));
               
-              yourval = (cardval - 1) % 13;
+              yourval = ((cardval - 1) % 13) + 1;
            }
            else if(yourval > 0 && theirval == 0)
            {
-              int cardval = (rand.nextInt(53)+1);//random card for opponent
+              int cardval = (rand.nextInt(52)+1);//random card for opponent
               
               imv4.setImage(images.get(cardval- 1));
               
-              theirval = (cardval - 1) % 13;
+              theirval = ((cardval - 1) % 13) + 1;
               
               roundover = true;
               
